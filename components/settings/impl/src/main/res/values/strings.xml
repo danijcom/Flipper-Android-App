@@ -13,6 +13,7 @@
     <string name="debug_options_desc">Features for developers and testing</string>
     <string name="debug_stress_test">Stress Test</string>
     <string name="debug_stress_test_desc">App performance testing</string>
+    <string name="debug_country_detect">Detect Country</string>
     <string name="debug_start_synchronization">Start Synchronization</string>
     <string name="debug_connection_to_another">Connection Screen</string>
     <string name="debug_connection_to_another_desc">Connect Flipper to the App</string>

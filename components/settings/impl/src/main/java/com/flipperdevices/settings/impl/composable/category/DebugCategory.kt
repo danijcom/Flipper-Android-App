@@ -41,6 +41,15 @@ fun DebugCategory(
                     }
                 )
                 GrayDivider()
+                ClickableElement(
+                    titleId = R.string.debug_country_detect,
+                    onClick = {
+                        navController.navigate(NavGraphRoute.CountryDetect.name) {
+                            popUpTo(NavGraphRoute.Settings.name)
+                        }
+                    }
+                )
+                GrayDivider()
                 SimpleElement(
                     titleId = R.string.debug_start_synchronization,
                     onClick = { debugViewModel.onStartSynchronization() }

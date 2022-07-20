@@ -73,6 +73,7 @@ include(
 
     ":components:debug:api",
     ":components:debug:stresstest",
+    ":components:debug:countrydetect",
 
     ":components:archive:api",
     ":components:archive:impl",
@@ -103,5 +104,5 @@ include(
     ":components:updater:impl",
     ":components:updater:screen",
     ":components:updater:downloader",
-    ":components:updater:card",
+    ":components:updater:card"
 )

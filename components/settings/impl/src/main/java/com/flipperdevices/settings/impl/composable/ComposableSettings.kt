@@ -42,14 +42,14 @@ fun ComposableSettings(
         composable(route = NavGraphRoute.StressTest.name) {
             settingsViewModel.stressTestApi.StressTestScreen()
         }
+        composable(route = NavGraphRoute.CountryDetect.name) {
+            settingsViewModel.countryDetectApi.CountryDetect()
+        }
     }
 }
 
 @Composable
-fun ComposableCommonSetting(
-    navController: NavController,
-    settingsViewModel: SettingsViewModel
-) {
+fun ComposableCommonSetting(navController: NavController, settingsViewModel: SettingsViewModel) {
     val context = LocalContext.current
     val settings by settingsViewModel.getState().collectAsState()
 

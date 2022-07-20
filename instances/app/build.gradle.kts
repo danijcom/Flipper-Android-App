@@ -46,6 +46,7 @@ dependencies {
 
     implementation(projects.components.debug.api)
     implementation(projects.components.debug.stresstest)
+    implementation(projects.components.debug.countrydetect)
 
     implementation(projects.components.archive.api)
     implementation(projects.components.archive.impl)

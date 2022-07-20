@@ -15,7 +15,7 @@ class FlipperApplication : Application() {
 
         CurrentActivityHolder.register(this)
 
-        ComponentHolder.components += DaggerAppComponent.factory()
+        val appComponent = DaggerAppComponent.factory()
             .create(
                 context = this,
                 application = this,
@@ -24,6 +24,8 @@ class FlipperApplication : Application() {
                     version = BuildConfig.VERSION_NAME
                 )
             )
+
+        ComponentHolder.components += appComponent
 
         if (BuildConfig.INTERNAL) {
             Timber.plant(Timber.DebugTree())

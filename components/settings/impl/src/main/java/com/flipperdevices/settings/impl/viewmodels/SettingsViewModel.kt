@@ -9,6 +9,7 @@ import com.flipperdevices.core.di.ComponentHolder
 import com.flipperdevices.core.navigation.global.CiceroneGlobal
 import com.flipperdevices.core.preference.pb.SelectedTheme
 import com.flipperdevices.core.preference.pb.Settings
+import com.flipperdevices.debug.api.CountryDetectApi
 import com.flipperdevices.debug.api.StressTestApi
 import com.flipperdevices.screenstreaming.api.ScreenStreamingApi
 import com.flipperdevices.settings.impl.di.SettingsComponent
@@ -34,6 +35,9 @@ class SettingsViewModel : ViewModel() {
 
     @Inject
     lateinit var stressTestApi: StressTestApi
+
+    @Inject
+    lateinit var countryDetectApi: CountryDetectApi
 
     @Inject
     lateinit var applicationParams: ApplicationParams
